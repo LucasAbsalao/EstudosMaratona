@@ -9,6 +9,7 @@ void hanoiTower(int origem, int destino, int n){
         if((origem==1&&destino==3)||(origem==3&&destino==1)) intermediario = 2;
         if((origem==2&&destino==3)||(origem==3&&destino==2)) intermediario = 1;
         if((origem==1&&destino==2)||(origem==2&&destino==1)) intermediario = 3;
+        
         hanoiTower(origem, intermediario, n-1);
         cout << origem << " " << destino << endl;
         hanoiTower(intermediario, destino, n-1);
